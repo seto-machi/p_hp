@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazae's portfolio</title>
+    <meta name="author" content="amazae" />
+    <meta
+      name="description"
+      content="amazaeのポートフォリオサイトです。" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="home.css" />
+    <script src="home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Slackside+One&family=Yomogi&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+    <header>
+      <div class="pc-menu pc-only">
+        <p><a href="#Profile">Profile</a></p>
+        <p><a href="#Gallary">Gallary</a></p>
+        <p><a href="#Link">Link</a></p>
+      </div>
+      <div class="sp-menu sp-only" aria-label="メニュー" aria-controls="overlay-menu" aria-expanded="false">
+        <button class="hamburger-overlay">
+          <span class="hamburger-overlay__line"></span>
+          <span class="hamburger-overlay__line"></span>
+          <span class="hamburger-overlay__line"></span>
+        </button>
+        <nav id="overlay-menu" class="nav-overlay" aria-hidden="true">
+          <div class="nav-overlay__content">
+            <ul class="nav-overlay__list">
+              <li class="nav-overlay__item"><a href="#Profile" class="nav-overlay__link">Profile</a></li>
+              <li class="nav-overlay__item"><a href="#Gallary" class="nav-overlay__link">Gallary</a></li>
+              <li class="nav-overlay__item"><a href="#Link" class="nav-overlay__link">Link</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="home">
+      <div class="galand">
+        <figure><img src="/img/L.png" alt="L_galand" width="250"></figure>
+        <figure class="pc-only"><img src="/img/R.png" alt="R_galand" width="250"></figure>
+      </div>
+      <h1>amazae's <br>portfolio</h1>
+      <div class="onigiri">
+        <figure><img src="/img/onigiri.png" alt="anigiri" width="100%"></figure>
+      </div>
+    </section>
+    <footer>
+      <p>amazae</p>
+    </footer>
+  </body>
+</html>
