@@ -17,6 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = x;
   });
 
+  //前のやつ
+  // const onevhScrollPoint = document.querySelector('.pagescroll');
+  // const profile = document.querySelector('#Profile');
+
+  // onevhScrollPoint.addEventListener('click', () => {
+  //   profile.scrollIntoView({ behavior: "smooth", block: "start" });
+  // })
+
+  //修正後
+  const home = document.querySelector('.home');
+  const winHeight = home.getBoundingClientRect().height;
+
+  const onevhScrollPoint = document.querySelector('.pagescroll');
+
+  onevhScrollPoint.addEventListener('click', () => {
+    window.scroll({ top: winHeight, behavior: "smooth" });
+  });
+
 });
 
 const ul = document.querySelector('.slider ul');
@@ -31,11 +49,11 @@ function moveSlide() {
   const slideWidth = slider[0].getBoundingClientRect().width;
   ul.style.transform = `translateX(${-1 * slideWidth * currentIndex}px)`;
 
-}
+};
 
 const slidefirst = slider[0];
 const copyfirst = slidefirst.cloneNode(true);
-ul.append(copyfirst)
+ul.append(copyfirst);
 
 
 let firstLoop = true;
@@ -66,16 +84,10 @@ const recursiveFunc = () => {
     }
     recursiveFunc();
   }, awaitTime)
-}
+};
 
 recursiveFunc();
 
-const onevhScrollPoint = document.querySelector('.pagescroll');
-const profile = document.querySelector('#Profile');
-
-onevhScrollPoint.addEventListener('click', () => {
-  profile.scrollIntoView({ behavior: "smooth", block: "start" });
-})
 
 
 

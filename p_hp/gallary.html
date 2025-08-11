@@ -9,7 +9,7 @@
     <meta name="description" content="amazaeのポートフォリオサイトです。" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="home.css" />
-    <script src="home.js" defer></script>
+    <script src="gallary.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,6 +20,7 @@
 <body>
     <header>
         <div class="pc-menu pc-only">
+            <p><a href="/index.html">Home</a></p>
             <p><a href="/index.html#Profile">Profile</a></p>
             <p><a href="/index.html#Gallary">Gallary</a></p>
             <p><a href="/index.html#Link">Link</a></p>
@@ -36,6 +37,7 @@
             <nav id="overlay-menu" class="nav-overlay" aria-hidden="true">
                 <div class="nav-overlay__content">
                     <ul class="nav-overlay__list">
+                        <li class="nav-overlay__item"><a href="/index.html" class="nav-overlay__link">Home</a></li>
                         <li class="nav-overlay__item"><a href="/index.html#Profile"
                                 class="nav-overlay__link">Profile</a></li>
                         <li class="nav-overlay__item"><a href="/index.html#Gallary"
@@ -56,27 +58,121 @@
     <section id="Design">
         <h1>Design</h1>
         <div class="box">
-            <figure><img src="/img/gallary/portfolio2.jpg" alt="" width="300"></figure>
+            <figure class="sumnail">
+                <img src="/img/gallary/portfolio2.jpg" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/portfolio2.jpg" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
         </div>
     </section>
     <section id="twodcg">
         <h1>2DCG</h1>
         <div class="box">
-            <figure><img src="/img/gallary/0612.jpg" alt="" width="300"></figure>
-            <figure><img src="/img/gallary/061622.jpg" alt="" width="300"></figure>
-            <figure><img src="/img/gallary/スクリーンショット 2025-06-13 181750.png" alt="" width="300"></figure>
-            <figure><img src="/img/gallary/スクリーンショット 2025-06-13 181758.png" alt="" width="300"></figure>
-            <figure><img src="/img/gallary/スクリーンショット 2025-06-13 181807.png" alt="" width="300"></figure>
-            <figure><img src="/img/gallary/スクリーンショット 2025-06-13 181814.png" alt="" width="300"></figure>
-            <figure><img src="/img/gallary/0723.jpg" alt="" width="300"></figure>
-            <figure><img src="/img/gallary/0710.jpg" alt="" width="300"></figure>
-
+            <figure class="sumnail"><img src="/img/gallary/0612.jpg" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/0612.jpg" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/061622.jpg" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/061622.jpg" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/スクリーンショット 2025-06-13 181750.png" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/スクリーンショット 2025-06-13 181750.png" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/スクリーンショット 2025-06-13 181758.png" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/スクリーンショット 2025-06-13 181758.png" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/スクリーンショット 2025-06-13 181807.png" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/スクリーンショット 2025-06-13 181807.png" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/スクリーンショット 2025-06-13 181814.png" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/スクリーンショット 2025-06-13 181814.png" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/0723.jpg" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/0723.jpg" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/0710.jpg" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/0710.jpg" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/07242.jpg" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/07242.jpg" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/20250319.jpg" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/20250319.jpg" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
+            <figure class="sumnail"><img src="/img/gallary/202409262.jpg" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/202409262.jpg" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
         </div>
     </section>
     <section id="Anime">
         <h1>Anime</h1>
         <div class="box">
-            <figure><img src="/img/gallary/GifMerge_3508x2480.gif" alt="" width="300"></figure>
+            <figure class="sumnail"><img src="/img/gallary/GifMerge_3508x2480.gif" alt="" width="300">
+                <div class="popup popup-close">
+                    <div class="popup-content">
+                        <button class="butten-box"><span class="butten"></span><span class="butten"></span></button>
+                        <figure><img src="/img/gallary/GifMerge_3508x2480.gif" alt="" width="100%"></figure>
+                    </div>
+                </div>
+            </figure>
         </div>
     </section>
 </body>

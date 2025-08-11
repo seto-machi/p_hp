@@ -405,16 +405,83 @@ footer p {
   justify-content: center;
   flex-wrap: wrap;
 
+}
+
+.sumnail {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px 25px;
+
+}
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  @media (min-width: 768px) {
+    height: 100%;
+  }
+
   figure {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 12px 25px;
+    margin: 0;
   }
 }
+
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 25px auto;
+  padding: 25px;
+  width: 80%;
+  height: calc(100% - 50px);
+  text-align: left;
+  overflow: scroll;
+}
+
+.popup-close {
+  display: none;
+}
+
+.butten-box {
+  position: relative;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+
+  &,
+  &:active {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+  }
+}
+
+.butten {
+  position: absolute;
+  right: 0px;
+  width: 26px;
+  height: 2px;
+  background-color: #3E9BEB;
+  content: "";
+
+  &:first-child {
+    transform: rotate(45deg);
+  }
+
+  &:last-child {
+    transform: rotate(-45deg);
+  }
+
+}
+
 
 
 /* overlay-styles.css */
